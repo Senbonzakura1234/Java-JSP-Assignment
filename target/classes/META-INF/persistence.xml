@@ -17,7 +17,7 @@
     <!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL55Dialect" />-->
     <!--        </properties>-->
     <!--    </persistence-unit>-->
-
+<!-- senbonzakura1997 db password   8mr5QyEABmiBp12D-->
     <persistence-unit name="persistence" transaction-type="RESOURCE_LOCAL">
         <description>Demo Hibernate Entity Manager</description>
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
