@@ -8,24 +8,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Material Dash</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/view/assets/vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/view/assets/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- Layout styles -->
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/view/assets/css/demo/style.css">
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/demo/style.css">
   <!-- End layout styles -->
-  <link rel="shortcut icon" href="${pageContext.request.contextPath}/view/assets/images/favicon.png" />
+  <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/favicon.png" />
 </head>
 <body>
-<script src="${pageContext.request.contextPath}/view/assets/js/preloader.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/preloader.js"></script>
   <div class="body-wrapper">
     <!-- partial:../../partials/_sidebar.html -->
     <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
       <div class="mdc-drawer__header">
         <a href="${pageContext.request.contextPath}/view/index.jsp" class="brand-logo">
-          <img src="${pageContext.request.contextPath}/view/assets/images/logo.svg" alt="logo">
+          <img src="${pageContext.request.contextPath}/assets/images/logo.svg" alt="logo">
         </a>
       </div>
       <div class="mdc-drawer__content">
@@ -48,7 +48,7 @@
               </a>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="ui-sub-menu">
+              <a class="mdc-expansion-panel-link" href="#/" data-toggle="expansionPanel" data-target="ui-sub-menu">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
                 UI Features
                 <i class="mdc-drawer-arrow material-icons">chevron_right</i>
@@ -81,7 +81,7 @@
               </a>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="sample-page-submenu">
+              <a class="mdc-expansion-panel-link" href="#/" data-toggle="expansionPanel" data-target="sample-page-submenu">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
                 Sample Pages
                 <i class="mdc-drawer-arrow material-icons">chevron_right</i>
@@ -182,7 +182,7 @@
               <button class="mdc-button mdc-menu-button">
                 <span class="d-flex align-items-center">
                   <span class="figure">
-                    <img src="${pageContext.request.contextPath}/view/assets/images/faces/face1.jpg" alt="user" class="user">
+                    <img src="${pageContext.request.contextPath}/assets/images/faces/face1.jpg" alt="user" class="user">
                   </span>
                   <span class="user-name">Clyde Miles</span>
                 </span>
@@ -292,7 +292,7 @@
                 <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail">
-                      <img src="${pageContext.request.contextPath}/view/assets/images/faces/face4.jpg" alt="user">
+                      <img src="${pageContext.request.contextPath}/assets/images/faces/face4.jpg" alt="user">
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Mark send you a message</h6>
@@ -301,7 +301,7 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail">
-                      <img src="${pageContext.request.contextPath}/view/assets/images/faces/face2.jpg" alt="user">
+                      <img src="${pageContext.request.contextPath}/assets/images/faces/face2.jpg" alt="user">
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Cregh send you a message</h6>
@@ -310,7 +310,7 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail">
-                      <img src="${pageContext.request.contextPath}/view/assets/images/faces/face3.jpg" alt="user">
+                      <img src="${pageContext.request.contextPath}/assets/images/faces/face3.jpg" alt="user">
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Profile picture updated</h6>
@@ -375,13 +375,13 @@
     </div>
   </div>
   <!-- plugins:js -->
-  <script src="${pageContext.request.contextPath}/view/assets/vendors/js/vendor.bundle.base.js"></script>
+  <script src="${pageContext.request.contextPath}/assets/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
   <!-- End plugin js for this page-->
   <!-- inject:js -->
-  <script src="${pageContext.request.contextPath}/view/assets/js/material.js"></script>
-  <script src="${pageContext.request.contextPath}/view/assets/js/misc.js"></script>
+  <script src="${pageContext.request.contextPath}/assets/js/material.js"></script>
+  <script src="${pageContext.request.contextPath}/assets/js/misc.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
   <!-- End custom js for this page-->

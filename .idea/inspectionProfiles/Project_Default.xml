@@ -3,5 +3,6 @@
     <option name="myName" value="Project Default" />
     <inspection_tool class="JpaDataSourceORMInspection" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="XmlDuplicatedId" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="XmlInvalidId" enabled="true" level="WARNING" enabled_by_default="true" />
   </profile>
 </component>

@@ -8,26 +8,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Material Dash</title>
   <!-- plugins:css -->
-  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/view/assets/vendors/mdi/css/materialdesignicons.min.css">
-  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/view/assets/vendors/css/vendor.bundle.base.css">
+  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/view/assets/vendors/flag-icon-css/css/flag-icon.min.css">
-  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/view/assets/vendors/jvectormap/jquery-jvectormap.css">
+  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/vendors/flag-icon-css/css/flag-icon.min.css">
+  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/vendors/jvectormap/jquery-jvectormap.css">
   <!-- End plugin css for this page -->
   <!-- Layout styles -->
-  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/view/assets/css/demo/style.css">
+  <link type="text/css" rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/demo/style.css">
   <!-- End layout styles -->
-  <link type="text/css" rel="shortcut icon" href="${pageContext.request.contextPath}/view/assets/images/favicon.png" />
+  <link rel="shortcut icon" href="${pageContext.request.contextPath}/assets/images/favicon.png" />
 </head>
 <body>
-<script src="${pageContext.request.contextPath}/view/assets/js/preloader.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/preloader.js"></script>
   <div class="body-wrapper">
     <!-- partial:partials/_sidebar.html -->
     <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
       <div class="mdc-drawer__header">
         <a href="${pageContext.request.contextPath}/index" class="brand-logo">
-          <img src="${pageContext.request.contextPath}/view/assets/images/logo.svg" alt="logo">
+          <img src="${pageContext.request.contextPath}/assets/images/logo.svg" alt="logo">
         </a>
       </div>
       <div class="mdc-drawer__content">
@@ -44,13 +44,13 @@
               </a>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"forms/basic-forms.jsp">
+              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/forms/basic-forms.jsp">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
                 Forms
               </a>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="ui-sub-menu">
+              <a class="mdc-expansion-panel-link" href="#/" data-toggle="expansionPanel" data-target="ui-sub-menu">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
                 UI Features
                 <i class="mdc-drawer-arrow material-icons">chevron_right</i>
@@ -58,12 +58,12 @@
               <div class="mdc-expansion-panel" id="ui-sub-menu">
                 <nav class="mdc-list mdc-drawer-submenu">
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"ui-features/buttons.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/ui-features/buttons.jsp">
                       Buttons
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"ui-features/typography.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/ui-features/typography.jsp">
                       Typography
                     </a>
                   </div>
@@ -71,19 +71,19 @@
               </div>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"tables/basic-tables.jsp">
+              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/tables/basic-tables.jsp">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
                 Tables
               </a>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"charts/chartjs.jsp">
+              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/charts/chartjs.jsp">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
                 Charts
               </a>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="sample-page-submenu">
+              <a class="mdc-expansion-panel-link" href="#/" data-toggle="expansionPanel" data-target="sample-page-submenu">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
                 Sample Pages
                 <i class="mdc-drawer-arrow material-icons">chevron_right</i>
@@ -91,37 +91,37 @@
               <div class="mdc-expansion-panel" id="sample-page-submenu">
                 <nav class="mdc-list mdc-drawer-submenu">
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"samples/blank-page.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/blank-page.jsp">
                       Blank Page
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"samples/403.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/403.jsp">
                       403
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"samples/404.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/404.jsp">
                       404
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"samples/500.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/500.jsp">
                       500
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"samples/505.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/505.jsp">
                       505
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"samples/login.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/login.jsp">
                       Login
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/"samples/register.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/register.jsp">
                       Register
                     </a>
                   </div>
@@ -184,7 +184,7 @@
               <button class="mdc-button mdc-menu-button">
                 <span class="d-flex align-items-center">
                   <span class="figure">
-                    <img src="${pageContext.request.contextPath}/view/assets/images/faces/face1.jpg" alt="user" class="user">
+                    <img src="${pageContext.request.contextPath}/assets/images/faces/face1.jpg" alt="user" class="user">
                   </span>
                   <span class="user-name">Clyde Miles</span>
                 </span>
@@ -294,7 +294,7 @@
                 <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail">
-                      <img src="${pageContext.request.contextPath}/view/assets/images/faces/face4.jpg" alt="user">
+                      <img src="${pageContext.request.contextPath}/assets/images/faces/face4.jpg" alt="user">
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Mark send you a message</h6>
@@ -303,7 +303,7 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail">
-                      <img src="${pageContext.request.contextPath}/view/assets/images/faces/face2.jpg" alt="user">
+                      <img src="${pageContext.request.contextPath}/assets/images/faces/face2.jpg" alt="user">
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Cregh send you a message</h6>
@@ -312,7 +312,7 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail">
-                      <img src="${pageContext.request.contextPath}/view/assets/images/faces/face3.jpg" alt="user">
+                      <img src="${pageContext.request.contextPath}/assets/images/faces/face3.jpg" alt="user">
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Profile picture updated</h6>
@@ -638,19 +638,19 @@
     </div>
   </div>
   <!-- plugins:js -->
-  <script type="text/javascript" src="${pageContext.request.contextPath}/view/assets/vendors/js/vendor.bundle.base.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/assets/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
-  <script type="text/javascript" src="${pageContext.request.contextPath}/view/assets/vendors/chartjs/Chart.min.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/view/assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/view/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/assets/vendors/chartjs/Chart.min.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
-  <script type="text/javascript" src="${pageContext.request.contextPath}/view/assets/js/material.js"></script>
-  <script type="text/javascript" src="${pageContext.request.contextPath}/view/assets/js/misc.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/material.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/misc.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script type="text/javascript" src="${pageContext.request.contextPath}/view/assets/js/dashboard.js"></script>
+  <script type="text/javascript" src="${pageContext.request.contextPath}/assets/js/dashboard.js"></script>
   <!-- End custom js for this page-->
 </body>
 </html> 
