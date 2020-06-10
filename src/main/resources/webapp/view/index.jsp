@@ -21,13 +21,13 @@
   <link type="text/css" rel="shortcut icon" href="${pageContext.request.contextPath}/view/assets/images/favicon.png" />
 </head>
 <body>
-<script src="assets/js/preloader.js"></script>
+<script src="${pageContext.request.contextPath}/view/assets/js/preloader.js"></script>
   <div class="body-wrapper">
     <!-- partial:partials/_sidebar.html -->
     <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
       <div class="mdc-drawer__header">
-        <a href="index.jsp" class="brand-logo">
-          <img src="assets/images/logo.svg" alt="logo">
+        <a href="${pageContext.request.contextPath}/index" class="brand-logo">
+          <img src="${pageContext.request.contextPath}/view/assets/images/logo.svg" alt="logo">
         </a>
       </div>
       <div class="mdc-drawer__content">
@@ -38,13 +38,13 @@
         <div class="mdc-list-group">
           <nav class="mdc-list mdc-drawer-menu">
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="index.jsp">
+              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/index">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
                 Dashboard
               </a>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="pages/forms/basic-forms.jsp">
+              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/forms/basic-forms.jsp">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
                 Forms
               </a>
@@ -58,12 +58,12 @@
               <div class="mdc-expansion-panel" id="ui-sub-menu">
                 <nav class="mdc-list mdc-drawer-submenu">
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/ui-features/buttons.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/ui-features/buttons.jsp">
                       Buttons
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/ui-features/typography.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/ui-features/typography.jsp">
                       Typography
                     </a>
                   </div>
@@ -71,13 +71,13 @@
               </div>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="pages/tables/basic-tables.jsp">
+              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/tables/basic-tables.jsp">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
                 Tables
               </a>
             </div>
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="pages/charts/chartjs.jsp">
+              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/charts/chartjs.jsp">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
                 Charts
               </a>
@@ -91,37 +91,37 @@
               <div class="mdc-expansion-panel" id="sample-page-submenu">
                 <nav class="mdc-list mdc-drawer-submenu">
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/samples/blank-page.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/blank-page.jsp">
                       Blank Page
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/samples/403.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/403.jsp">
                       403
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/samples/404.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/404.jsp">
                       404
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/samples/500.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/500.jsp">
                       500
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/samples/505.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/505.jsp">
                       505
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/samples/login.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/login.jsp">
                       Login
                     </a>
                   </div>
                   <div class="mdc-list-item mdc-drawer-item">
-                    <a class="mdc-drawer-link" href="pages/samples/register.jsp">
+                    <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/view/pages/samples/register.jsp">
                       Register
                     </a>
                   </div>
@@ -184,7 +184,7 @@
               <button class="mdc-button mdc-menu-button">
                 <span class="d-flex align-items-center">
                   <span class="figure">
-                    <img src="assets/images/faces/face1.jpg" alt="user" class="user">
+                    <img src="${pageContext.request.contextPath}/view/assets/images/faces/face1.jpg" alt="user" class="user">
                   </span>
                   <span class="user-name">Clyde Miles</span>
                 </span>
@@ -201,7 +201,7 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail item-thumbnail-icon-only">
-                      <i class="mdi mdi-settings-outline text-primary"></i>                      
+                      <i class="mdi mdi-settings-outline text-primary"></i>
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Logout</h6>
@@ -227,7 +227,7 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail item-thumbnail-icon-only">
-                      <i class="mdi mdi-progress-download text-primary"></i>                      
+                      <i class="mdi mdi-progress-download text-primary"></i>
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Update</h6>
@@ -254,7 +254,7 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail item-thumbnail-icon">
-                      <i class="mdi mdi-account-outline"></i>                      
+                      <i class="mdi mdi-account-outline"></i>
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">New user registered</h6>
@@ -269,7 +269,7 @@
                       <h6 class="item-subject font-weight-normal">System Alert</h6>
                       <small class="text-muted"> 2 days ago </small>
                     </div>
-                  </li> 
+                  </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail item-thumbnail-icon">
                       <i class="mdi mdi-update"></i>
@@ -278,7 +278,7 @@
                       <h6 class="item-subject font-weight-normal">You have a new update</h6>
                       <small class="text-muted"> 3 days ago </small>
                     </div>
-                  </li> 
+                  </li>
                 </ul>
               </div>
             </div>
@@ -294,7 +294,7 @@
                 <ul class="mdc-list" role="menu" aria-hidden="true" aria-orientation="vertical">
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail">
-                      <img src="assets/images/faces/face4.jpg" alt="user">
+                      <img src="${pageContext.request.contextPath}/view/assets/images/faces/face4.jpg" alt="user">
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Mark send you a message</h6>
@@ -303,7 +303,7 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail">
-                      <img src="assets/images/faces/face2.jpg" alt="user">
+                      <img src="${pageContext.request.contextPath}/view/assets/images/faces/face2.jpg" alt="user">
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Cregh send you a message</h6>
@@ -312,13 +312,13 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail">
-                      <img src="assets/images/faces/face3.jpg" alt="user">
+                      <img src="${pageContext.request.contextPath}/view/assets/images/faces/face3.jpg" alt="user">
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Profile picture updated</h6>
                       <small class="text-muted"> 18 Minutes ago </small>
                     </div>
-                  </li>                
+                  </li>
                 </ul>
               </div>
             </div>
@@ -338,7 +338,7 @@
                   </li>
                   <li class="mdc-list-item" role="menuitem">
                     <div class="item-thumbnail item-thumbnail-icon-only">
-                      <i class="mdi mdi-logout-variant text-primary"></i>                      
+                      <i class="mdi mdi-logout-variant text-primary"></i>
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
                       <h6 class="item-subject font-weight-normal">Logout</h6>
@@ -473,11 +473,11 @@
                           </table>
                         </div>
                     </div>
-                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet"> 
+                    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 mdc-layout-grid__cell--span-8-tablet">
                       <div id="revenue-map" class="revenue-world-map"></div>
                     </div>
                   </div>
-                </div> 
+                </div>
               </div>
               <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop mdc-layout-grid__cell--span-4-tablet">
                 <div class="mdc-card bg-success text-white">
@@ -528,7 +528,7 @@
                   </div>
                   <div class="d-block d-sm-flex justify-content-between align-items-center">
                     <h6 class="card-sub-title mb-0">Sales performance revenue based by country</h6>
-                    <div class="mdc-tab-wrapper revenue-tab mdc-tab--secondary"> 
+                    <div class="mdc-tab-wrapper revenue-tab mdc-tab--secondary">
                       <div class="mdc-tab-bar" role="tablist">
                         <div class="mdc-tab-scroller">
                           <div class="mdc-tab-scroller__scroll-area">
@@ -582,11 +582,11 @@
                           </div>
                         </div>
                       </div>
-                      <div class="content content--active">    
+                      <div class="content content--active">
                       </div>
                       <div class="content">
                       </div>
-                      <div class="content">    
+                      <div class="content">
                       </div>
                       <div class="content">
                       </div>
