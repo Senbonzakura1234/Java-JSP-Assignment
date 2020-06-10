@@ -1,3 +1,4 @@
+<%--suppress ALL --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
@@ -21,7 +22,7 @@
 <body>
 <script src="${pageContext.request.contextPath}/assets/js/preloader.js"></script>
   <div class="body-wrapper">
-    <!-- partial:../../partials/_sidebar.html -->
+    <!-- partial:../../partials/_sidebar.jsp -->
     <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
       <div class="mdc-drawer__header">
         <a href="${pageContext.request.contextPath}/view/index.jsp" class="brand-logo">
@@ -135,9 +136,9 @@
           </nav>
         </div>
         <div class="profile-actions">
-          <a href="javascript:;">Settings</a>
+          <a href="javascript:">Settings</a>
           <span class="divider"></span>
-          <a href="javascript:;">Logout</a>
+          <a href="javascript:">Logout</a>
         </div>
         <div class="mdc-card premium-card">
           <div class="d-flex align-items-center">
@@ -159,7 +160,7 @@
     </aside>
     <!-- partial -->
     <div class="main-wrapper mdc-drawer-app-content">
-      <!-- partial:../../partials/_navbar.html -->
+      <!-- partial:../../partials/_navbar.jsp -->
       <header class="mdc-top-app-bar">
         <div class="mdc-top-app-bar__row">
           <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
@@ -353,7 +354,7 @@
         <main class="content-wrapper">
           
         </main>
-        <!-- partial:../../partials/_footer.html -->
+        <!-- partial:../../partials/_footer.jsp -->
         <footer>
           <div class="mdc-layout-grid">
             <div class="mdc-layout-grid__inner">

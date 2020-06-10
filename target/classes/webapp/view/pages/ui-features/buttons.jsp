@@ -21,7 +21,7 @@
 <body>
 <script src="${pageContext.request.contextPath}/assets/js/preloader.js"></script>
   <div class="body-wrapper">
-    <!-- partial:../../partials/_sidebar.html -->
+    <!-- partial:../../partials/_sidebar.jsp -->
     <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
       <div class="mdc-drawer__header">
         <a href="${pageContext.request.contextPath}/view/index.jsp" class="brand-logo">
@@ -160,7 +160,7 @@
     <!-- partial -->
 
     <div class="main-wrapper mdc-drawer-app-content">
-      <!-- partial:../../partials/_navbar.html -->
+      <!-- partial:../../partials/_navbar.jsp -->
       <header class="mdc-top-app-bar">
         <div class="mdc-top-app-bar__row">
           <div class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
@@ -614,7 +614,7 @@
             </div>
           </div>
         </main>
-        <!-- partial:../../partials/_footer.html -->
+        <!-- partial:../../partials/_footer.jsp -->
         <footer>
           <div class="mdc-layout-grid">
             <div class="mdc-layout-grid__inner">

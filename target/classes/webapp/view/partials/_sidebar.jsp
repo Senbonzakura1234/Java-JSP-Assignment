@@ -1,7 +1,8 @@
+<%--suppress ALL --%>
 <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
       <div class="mdc-drawer__header">
-        <a href="index.html" class="brand-logo">
-          <img src="../assets/images/logo.svg" alt="logo">
+        <a href="${pageContext.request.contextPath}/index" class="brand-logo">
+          <img src="${pageContext.request.contextPath}/assets/images/logo.svg" alt="logo">
         </a>
       </div>
       <div class="mdc-drawer__content">
@@ -12,7 +13,7 @@
         <div class="mdc-list-group">
           <nav class="mdc-list mdc-drawer-menu">
             <div class="mdc-list-item mdc-drawer-item">
-              <a class="mdc-drawer-link" href="index.html">
+              <a class="mdc-drawer-link" href="${pageContext.request.contextPath}/index">
                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
                 Dashboard
               </a>
