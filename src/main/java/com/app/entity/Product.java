@@ -12,7 +12,7 @@ public class Product {
     @Column(name = "id")
     private String id;
 
-    @Column(name = "shop")
+    @Column(name = "shopId")
     private String shopId;
 
     @ManyToOne
