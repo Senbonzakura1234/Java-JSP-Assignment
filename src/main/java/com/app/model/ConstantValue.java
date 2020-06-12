@@ -5,11 +5,13 @@ public class ConstantValue {
 
     public static String TagUsername = "username";
     public static String TagPassword = "password";
+    public static String TagEmail = "email";
 
     public static String LoginTitle = "Login";
     public static String DashboardTitle = "Dashboard";
 
     public static String LoginRoute = "login";
+    public static String RegisterRoute = "register";
     public static String DashboardRoute = "index";
     public static String[] redirectPath = {"/login", "/register"};
 

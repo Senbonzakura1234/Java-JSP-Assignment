@@ -68,6 +68,17 @@ public class User {
         updatedAt = System.currentTimeMillis();
     }
 
+    public User(String username, String email, String password) {
+        id = UUID.randomUUID().toString();
+        status = StatusEnum.ACTIVE;
+        gender = GenderEnum.UNKNOWN;
+        createdAt = System.currentTimeMillis();
+        updatedAt = System.currentTimeMillis();
+        this.username = username;
+        this.email = email;
+        this.password = returnHashedString(password);
+    }
+
     public enum StatusEnum {
         ACTIVE (0),
         INACTIVE (1),
