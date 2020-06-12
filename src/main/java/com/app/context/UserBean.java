@@ -3,6 +3,7 @@ package com.app.context;
 import com.app.entity.User;
 import com.app.jsonmodel.User.UpdatePasswordJsonModel;
 import com.app.jsonmodel.User.UpdateStatusJsonModel;
+import com.app.model.HashMethod;
 import com.app.model.returnResult.DatabaseQueryResult;
 
 import javax.ejb.Stateless;
@@ -251,6 +252,31 @@ public class UserBean {
         }else {
             return new DatabaseQueryResult(false,
                     "input is empty");
+        }
+    }
+
+    public User checkLoginInfo(String username, String password) {
+        if(username != null && !username.isEmpty() && password != null && !password.isEmpty()){
+            String passwordHashed = HashMethod.returnHashedString(password);
+            EntityManager em = emf.createEntityManager();
+            try {
+                em.getTransaction().begin();
+                User u = em.createQuery(
+                        "SELECT u from User u where username = :queryUser and password= :queryPass and status != :queryStatus",
+                        User.class).setParameter("queryUser",username).setParameter("queryPass",passwordHashed).setParameter("queryStatus",
+                        User.StatusEnum.DELETED)
+                        .getSingleResult();
+                em.getTransaction().commit();
+                em.close();
+                return u;
+            } catch (Exception e) {
+                e.printStackTrace();
+                em.getTransaction().rollback();
+                em.close();
+                return null;
+            }
+        }else {
+            return null;
         }
     }
 }

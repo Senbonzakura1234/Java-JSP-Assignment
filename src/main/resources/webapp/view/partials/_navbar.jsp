@@ -40,7 +40,7 @@
                       <i class="mdi mdi-settings-outline text-primary"></i>                      
                     </div>
                     <div class="item-content d-flex align-items-start flex-column justify-content-center">
-                      <h6 class="item-subject font-weight-normal">Logout</h6>
+                      <a href="logout" class="item-subject font-weight-normal">Logout</a>
                     </div>
                   </li>
                 </ul>
