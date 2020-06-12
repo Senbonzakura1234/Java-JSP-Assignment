@@ -65,7 +65,7 @@
                                                     <a href="#/" class="mdc-button mdc-button--raised icon-button filled-button--secondary px-2 mr-2">
                                                         <i class="material-icons mdc-button__icon">delete</i>
                                                     </a>
-                                                    <a href="${pageContext.request.contextPath}/updateCategory?id=${item.id}"
+                                                    <a href="${pageContext.request.contextPath}/productDetail?id=${item.id}"
                                                        class="mdc-button mdc-button--raised icon-button filled-button--success px-2">
                                                         <i class="material-icons mdc-button__icon">edit</i>
                                                     </a>
