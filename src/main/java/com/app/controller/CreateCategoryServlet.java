@@ -2,9 +2,9 @@ package com.app.controller;
 
 import com.app.context.CategoryBean;
 import com.app.entity.Category;
+import com.app.model.returnResult.DatabaseQueryResult;
 
 import javax.ejb.EJB;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,25 +19,27 @@ public class CreateCategoryServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter("name");
         if(name == null || name.isEmpty()){
-            doProcess(request, response);
+            doProcess(request, response, "input is null");
         }else {
             Category category = new Category();
             category.setName(name);
-            if(categoryBean.addCategory(category).isSuccess()){
-                response.sendRedirect("/categories");
+            DatabaseQueryResult DQR = categoryBean.addCategory(category);
+            if(DQR.isSuccess()){
+                response.sendRedirect("/indexCategory");
             }else {
-                doProcess(request, response);
+                doProcess(request, response, DQR.getDescription());
             }
         }
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doProcess(request, response);
+        doProcess(request, response, "");
     }
 
 
-    protected void doProcess(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    protected void doProcess(HttpServletRequest request, HttpServletResponse response, String message) throws ServletException, IOException {
+        request.setAttribute("message", message);
         request.getRequestDispatcher("view/category/create.jsp").forward(request, response);
     }
 }

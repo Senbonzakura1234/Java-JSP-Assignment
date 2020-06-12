@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "GetCategoriesServlet",  urlPatterns = "/categories")
-public class GetCategoriesServlet extends HttpServlet {
+@WebServlet(name = "IndexCategoryServlet",  urlPatterns = "/indexCategory")
+public class IndexCategoryServlet extends HttpServlet {
 
     @EJB
     CategoryBean categoryBean;

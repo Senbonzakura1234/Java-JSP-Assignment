@@ -41,14 +41,15 @@
                 <div class="mdc-layout-grid">
                     <div class="mdc-layout-grid__inner">
                         <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
-                            <form class="mdc-card" method="post" action="${pageContext.request.contextPath}/createCategory">
-                                <h6 class="card-title">Create Category</h6>
+                            <form class="mdc-card" method="post" action="${pageContext.request.contextPath}/updateCategory">
+                                <h6 class="card-title">Update Category</h6>
                                 <p class="card-sub-title text-danger">${message}</p>
                                 <div class="template-demo">
+                                    <input type="hidden" name="id" value="${id}">
                                     <div class="mdc-layout-grid__inner">
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
                                             <div class="mdc-text-field mdc-text-field--outlined">
-                                                <input class="mdc-text-field__input" name="name" id="text-field-hero-input">
+                                                <input class="mdc-text-field__input" name="name" id="text-field-hero-input" value="${name}">
                                                 <div class="mdc-notched-outline">
                                                     <div class="mdc-notched-outline__leading"></div>
                                                     <div class="mdc-notched-outline__notch">
@@ -56,6 +57,38 @@
                                                     </div>
                                                     <div class="mdc-notched-outline__trailing"></div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
+                                            <div class="mdc-select demo-width-class mdc-layout-grid__cell--span-12" data-mdc-auto-init="MDCSelect">
+                                                <input type="hidden" name="status" value="${status}">
+                                                <i class="mdc-select__dropdown-icon"></i>
+                                                <div class="mdc-select__selected-text"></div>
+                                                <div class="mdc-select__menu mdc-menu-surface demo-width-class">
+                                                    <ul class="mdc-list">
+                                                        <%--@elvariable id="selectOptionList" type="java.util.List"--%>
+                                                        <c:forEach items="${selectOptionList}" var="item">
+                                                            <li class="mdc-list-item ${item.selected? " mdc-list-item--selected" : ""}"
+                                                                data-value="${item.value}" aria-selected="${item.selected? "true" : "false"}">
+                                                                    ${item.name}
+                                                            </li>
+
+                                                        </c:forEach>
+<%--                                                        <li class="mdc-list-item mdc-list-item--selected" data-value="" aria-selected="true">--%>
+<%--                                                        </li>--%>
+<%--                                                        <li class="mdc-list-item" data-value="grains">--%>
+<%--                                                            Bread, Cereal, Rice, and Pasta--%>
+<%--                                                        </li>--%>
+<%--                                                        <li class="mdc-list-item" data-value="vegetables">--%>
+<%--                                                            Vegetables--%>
+<%--                                                        </li>--%>
+<%--                                                        <li class="mdc-list-item" data-value="fruit">--%>
+<%--                                                            Fruit--%>
+<%--                                                        </li>--%>
+                                                    </ul>
+                                                </div>
+                                                <span class="mdc-floating-label">Pick a Food Group</span>
+                                                <div class="mdc-line-ripple"></div>
                                             </div>
                                         </div>
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12">
