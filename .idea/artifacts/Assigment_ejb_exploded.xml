@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="Assigment:ejb exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Assigment_ejb_exploded</output-path>
+    <root id="root">
+      <element id="module-output" name="Assigment" />
+      <element id="javaee-facet-resources" facet="Assigment/web/Web" />
+      <element id="javaee-facet-resources" facet="Assigment/ejb/EJB" />
+    </root>
+  </artifact>
+</component>
