@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Java-JSP-Assignment:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/Java_JSP_Assignment_war_exploded</output-path>
+  <artifact type="exploded-war" name="JSPAssignment:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JSPAssignment_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Java-JSP-Assignment" />
-          <element id="jpa-descriptors" facet="Java-JSP-Assignment/jpa/JPA" />
+          <element id="module-output" name="JSPAssignment" />
+          <element id="jpa-descriptors" facet="JSPAssignment/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.mariadb.jdbc:mariadb-java-client:2.6.0" />
@@ -35,8 +35,8 @@
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.5" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="Java-JSP-Assignment/web/Web" />
-      <element id="javaee-facet-resources" facet="Java-JSP-Assignment/ejb/EJB" />
+      <element id="javaee-facet-resources" facet="JSPAssignment/web/Web" />
+      <element id="javaee-facet-resources" facet="JSPAssignment/ejb/EJB" />
     </root>
   </artifact>
 </component>
