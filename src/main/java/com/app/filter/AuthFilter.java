@@ -21,7 +21,7 @@ public class AuthFilter implements Filter {
         String uri = request.getRequestURI();
 
         if (session.getAttribute(ConstantValue.TagUsername) == null) {
-            if(uri.contains("assets")) {
+            if(uri.contains("assets") || uri.contains("register")) {
                 chain.doFilter(req, resp);
                 return;
             }
