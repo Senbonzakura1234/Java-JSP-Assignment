@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="JSPAssignment:ejb exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JSPAssignment_ejb_exploded</output-path>
+    <root id="root">
+      <element id="module-output" name="JSPAssignment" />
+      <element id="javaee-facet-resources" facet="JSPAssignment/web/Web" />
+      <element id="javaee-facet-resources" facet="JSPAssignment/ejb/EJB" />
+      <element id="artifact" artifact-name="JSPAssignment:war exploded" />
+    </root>
+  </artifact>
+</component>
